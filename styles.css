@@ -901,3 +901,6 @@ html[data-theme="dark"] .site-footer a:focus-visible { color:#fff; }
 html[data-theme="dark"] .button:focus-visible,
 html[data-theme="dark"] .site-nav a:focus-visible { outline-color:rgba(130,200,232,.55); }
 @media(max-width:720px) { html[data-theme="dark"] .site-nav { border-color:#3b5962; background:#203b45; } }
+/* Preserve clear hero-heading contrast when the dark theme is active. */
+html[data-theme="dark"] .hero h1 { color:#e4eff2; }
+html[data-theme="dark"] .hero h1 em { color:#a5e2ca; }
