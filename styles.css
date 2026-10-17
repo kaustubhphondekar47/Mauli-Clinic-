@@ -926,9 +926,6 @@ body { background:#f4f8f6; }
 .contact-card { border-left:4px solid #5aa887; }
 .appointment-form { border-top:4px solid #4f9eb0; }
 .site-footer { background:linear-gradient(110deg,#dcece5,#dcebf0 58%,#eee6d7); }
-html[data-th
-
-
 /* Dark mode readability: keep the light theme's hierarchy and accent cues. */
 html[data-theme="dark"]{--ink:#edf5f4;--muted:#c1d1d4;--line:#405e66;color-scheme:dark}
 html[data-theme="dark"] body{color:#e6f0f0!important;background:#122d36!important}
