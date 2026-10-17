@@ -1,8 +1,26 @@
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".site-nav");
+const themeButton = document.querySelector(".theme-toggle");
 const form = document.querySelector(".appointment-form");
 const statusText = document.querySelector(".form-status");
 const dateInput = form?.querySelector('input[name="date"]');
+
+const savedTheme = localStorage.getItem("mauli-clinic-theme");
+const setTheme = (theme) => {
+  const isDark = theme === "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  themeButton?.setAttribute("aria-pressed", String(isDark));
+  themeButton?.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`);
+  const label = themeButton?.querySelector("span");
+  if (label) label.textContent = isDark ? "Light mode" : "Dark mode";
+};
+
+setTheme(savedTheme === "dark" ? "dark" : "light");
+themeButton?.addEventListener("click", () => {
+  const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  localStorage.setItem("mauli-clinic-theme", nextTheme);
+  setTheme(nextTheme);
+});
 
 if (dateInput) {
   const now = new Date();
