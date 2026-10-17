@@ -37,6 +37,18 @@ The appointment form validates required fields and prepares a WhatsApp message a
 
 With these settings, GitHub publishes the `main` branch’s root folder. Keep `index.html`, `styles.css`, `script.js`, and `clinic-care.png` together at that root level so the page and image load correctly.
 
+### Replace the old site that is already online
+
+Use the repository that currently publishes the old Mauli Clinic website. Do not create another repository or change the Pages source settings.
+
+1. Open the existing website repository on GitHub and select **Add file → Upload files**.
+2. Upload the updated `index.html`, `styles.css`, `script.js`, and `clinic-care.png` from this folder. If the upload asks whether to replace files with the same names, choose the replace/overwrite option. Keep them at the same paths the existing site uses; for this setup, that is the repository root.
+3. Keep the repository’s existing `.nojekyll` file. You can upload the included `.nojekyll` too if it is missing.
+4. Scroll to **Commit changes**, use a message such as `Update Mauli Clinic website`, and commit to the branch and folder already selected under **Settings → Pages** (usually `main` and `/(root)`).
+5. Open the repository’s **Actions** tab and wait for the Pages deployment to finish. The published site normally updates within a few minutes; GitHub notes that it can take up to 10 minutes.
+6. Open the same website URL as before and hard-refresh it: press **Ctrl+F5** on Windows, or open it in a private/incognito window. The URL does not change when you update files in the same repository.
+
+If the old website is published from a `/docs` folder or a `gh-pages` branch, upload the files into that same publishing folder/branch instead of the repository root. Check **Settings → Pages → Build and deployment** first so the new `index.html` replaces the file the live site actually serves.
 ## Updating the website later
 
 1. Open the `mauli-clinic` repository and choose **Add file → Upload files**.
@@ -57,4 +69,5 @@ With these settings, GitHub publishes the `main` branch’s root folder. Keep `i
 - [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 - [Configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source)
 - [GitHub Pages HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
+
 
