@@ -907,3 +907,23 @@ html[data-theme="dark"] .hero h1 em { color:#a5e2ca; }
 /* Ensure the hero title stays readable in dark mode. */
 html[data-theme="dark"] .hero h1 { color:#f2fbff !important; }
 html[data-theme="dark"] .hero h1 em { color:#b7f0d8 !important; }
+/* A little more color separation across the light palette, keeping the compact calm layout. */
+:root { --ink:#153c45; --muted:#526d75; --line:#cbdedc; }
+body { background:#f4f8f6; }
+.site-header { background:rgba(249,253,251,.96); }
+.hero { background:radial-gradient(ellipse at 88% 8%,rgba(83,174,146,.28),transparent 30%),radial-gradient(ellipse at 2% 100%,rgba(86,164,194,.19),transparent 32%),linear-gradient(120deg,#e9f5f7 0%,#eef7ec 100%); }
+.trust-strip div:nth-child(1) { background:#e9f4ef; }
+.trust-strip div:nth-child(2) { background:#e9f3f6; }
+.trust-strip div:nth-child(3) { background:#f7f0e5; }
+.about { background:linear-gradient(115deg,#f4f8ef,#eaf4ee 56%,#eef5f7); }
+.about-intro { background:linear-gradient(145deg,#fffdf8,#eaf5ee 72%,#e7f2f4); }
+.services { background:linear-gradient(145deg,#e7f2f5,#e5f2eb 55%,#f3f1e8); }
+.service-card { background:linear-gradient(155deg,#fff,#f4f8f2); }
+.why-choose-us { background:linear-gradient(120deg,#f4f2e8,#eaf3eb 55%,#eaf3f6); }
+.location { background:linear-gradient(125deg,#e8f3f5,#e7f2ed); }
+.faq { background:linear-gradient(125deg,#eaf3ef,#e7f0f5 58%,#f4eee3); }
+.contact { background:linear-gradient(125deg,#edf4e9,#e5f1f3 58%,#f6eee3); }
+.contact-card { border-left:4px solid #5aa887; }
+.appointment-form { border-top:4px solid #4f9eb0; }
+.site-footer { background:linear-gradient(110deg,#dcece5,#dcebf0 58%,#eee6d7); }
+html[data-th
