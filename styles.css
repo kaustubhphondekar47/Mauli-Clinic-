@@ -904,3 +904,6 @@ html[data-theme="dark"] .site-nav a:focus-visible { outline-color:rgba(130,200,2
 /* Preserve clear hero-heading contrast when the dark theme is active. */
 html[data-theme="dark"] .hero h1 { color:#e4eff2; }
 html[data-theme="dark"] .hero h1 em { color:#a5e2ca; }
+/* Ensure the hero title stays readable in dark mode. */
+html[data-theme="dark"] .hero h1 { color:#f2fbff !important; }
+html[data-theme="dark"] .hero h1 em { color:#b7f0d8 !important; }
